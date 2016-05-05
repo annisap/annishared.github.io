@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="Nowadays we are experiencing the golden era of data science as an increasingly huge explosion of data is being created every day. Actually IBM, one of">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Annie Sap">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Get a sense of databases"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Into the Data"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content="undefined"/>
+    
+
+    <!-- Title -->
+    
+    <title>Get a sense of databases - Into the Data</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<!-- Menu -->
+<!-- Navigation -->
+<header>
+    <div class="logo">
+        <a href="/">Into the Data</a>
+    </div><!-- end logo -->
+
+    <div id="menu_icon"></div>
+    <nav>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives">Articles</a>
+            </li>
+            
+        </ul>
+    </nav><!-- end navigation menu -->
+
+    <div class="footer clearfix">
+        <ul class="social clearfix">
+            
+                <li>
+                  <a href="https://twitter.com/anniec0d" class="twitter" target="_blank" data-title="Twitter">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+            
+            
+              <li>
+                <a href="https://github.com/annishared" class="github" target="_blank" data-title="Github">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+            
+            
+            
+            
+            
+        </ul><!-- end social -->
+
+        <div class="rights">
+            <p>Copyright © 2016 Annie Sap.</p>
+        </div><!-- end rights -->
+    </div ><!-- end footer -->
+</header><!-- end header -->
+
+
+<!-- Main Content -->
+<section class="main clearfix">
+
+    <section class="top" style="background: url('http://tume-maailm.pri.ee/ylikool/ComputerGraphicsSeminar/projects/flightData.jpg');">
+        <div class="wrapper content_header clearfix">
+            
+
+<div class="work_nav">
+
+    <ul class="btn clearfix">
+        
+        <li><a href="/2016/05/04/SMAC/" class="previous" data-title="SMAC computing platform transforms IT in..."></a></li>
+        
+        <li><a href="/" class="grid" data-title="Articles"></a></li>
+        
+        <li><a href="/2016/05/04/strategy/" class="next" data-title="Thinking beyond b..."></a></li>
+        
+    </ul>
+
+</div><!-- end work_nav -->
+
+            <h1 class="title">Get a sense of databases</h1>
+        </div>
+    </section><!-- end top -->
+
+    <section class="wrapper">
+        <div class="content">
+
+            <!-- Gallery -->
+            
+
+            <!-- Content -->
+            <p>Nowadays we are experiencing the golden era of data science as an increasingly huge explosion of data is being created every day. Actually IBM, one of the leaders in Information Technology (IT) industry, has estimated that 2.5 billion gigabytes of data was being generated every day in 2012. Because of the surge of data generation, the importance of databases has further boosted. However if you desire to become a database expert you have to study a lot; and this article is more about like the general idea of databases and particularly to relational ones since they are the dominant in the field.</p>
+<p>So what is a database?</p>
+<p>A database is an organized and complete collection of data. Simply speaking, it is the place where your data are stored and can be easily retrieved.</p>
+<p>Why and how is a database organized?</p>
+<p>The data must be structured in an appropriate order (eg. tables in relational databases) so you can easily extract or update them. Thus, a relational database is indeed a collection of tables. Importantly, a table is the construction of similar data. A table for student’s data will be individual and a table for lesson’s data will be another table, this is what I mean when I am saying similar and that’s why we can administer the data so effortlessly.<br>In addition to that the data should be complete, in order to have a consistent database. For instance, if you want to create the database of YouTube and you have created two tables, one for videos and one for users, you could not get information such as “what videos have obscene comments which must be deleted?” as the table that stores the comments is missing. That is what in books is called deficiency of data. Let me explain this more simply. Imagine yourself as a receptionist in the Hilton Hotel and today you are ordered to send a suitcase that a faithful customer has forgotten. Let’s say that you haven’t written his address in the table “Client” (where you store the information about clients) and neither his telephone. Such a mess! Now you have to deal with your boss (the manager of the hotel possibly) and you are doomed to discharge due to the fact that you haven’t fully stored all the data you need.</p>
+<p>What are and how to make queries to the database?<br>Assuming you have a tabular database and you want to answer some things and get some responses back from database. How will you achieve a communication with the database? You need to speak the same language and until we teach databases and computers how to speak English (ok a cold joke) we should learn their language which is SQL (Structured Query Language). Don’t be terrified! SQL has 24 commands in total that allow you to ‘play’ with your data and it is really easy to learn as ultimately it is just usage of English. For example you are a secretary in a university and you want to select the names of the students that register this year. You just type “SELECT name FROM students”. You will get bored typing the words SELECT and FROM if you finally put yourself in the world of databases. Supposing that you want to delete the table lessons from your database (this is not a realistic example, never will be removed lessons from a university but anyway) you will just simply type DROP TABLE lessons. So you are a serious businessman and want to find the names and the city of your customers, how will accomplished that?</p>
+<p><img src="/img/Picture1.png" alt="sql"></p>
+<p>What’s happening in the market?</p>
+<p>Most people are familiar with relational databases as they are the most widespread. There are three common types of databases used today. Relational, Object-Oriented and NoSQL databases. Ok there is cloud based storage but this is another topic that won’t be discussed in this introductory tut.<br>Relational databases are the most prevalent approach and they were first proposed in 1970. As we previously said, they are composed of tables where each table stores similar data and each represent an entity which contains fields or attributes (the entity’s columns) and records (the entity’s rows). The fields contain the data that are stored and the tables are the structure of the database. Each entity has a Primary Key (PK) that identifies the uniqueness of each row in a table. In simple words the primary key is a column and it is differentiated in each row. For example if we have two users with the exactly same name in our table of students of the University database, we couldn’t define who of the two has passed the lesson ‘Introduction to databases’ unless we have a PK.<br>Secondly we have object-oriented databases which ensued from object oriented programming (if you ever heard of Java, Python, C++ etc. this is OOP). The difference is that the data here are defined as classes and objects. Particularly, a class refers to a table and an object/instance refers to a record. Except for SQL, such databases employ also languages like Java and other so they are friendlier to programmers. It is true that they are the least prevalent in the market.<br>A third category is still emerging today: NoSQL which stands for  ”Non SQL” without this referring that necessarily SQL isn’t used . NoSQL databases are often very fast and they are used for managing large scale data common know as Big Data. The data here are stored on key/values, documents and graphs. The most challenging part is that they use APIs instead of direct SQL queries. Application Programming Interfaces are software programs that enable an easy interaction with other software programs. NoSQL and APIs are considered to be modern technologies and they have already gained huge popularity. Indeed this technology is a topic that has a lot to say and so that are just the really basic theory.</p>
+<p>As we said the database is where all the information is stored.<br>But how a user or other applications interact with the database?</p>
+<p>The database management system (DBMS) is the software program that enables processes like the maintenance and the creation of databases. Moreover it defines some rules like the information policy to the database. For example you want to show the data of your website to a guest but you don’t want to give him the right to delete some of the data, and this is what called role-based access to the data. Depending on what type of data you want to store, you select the suitable DBMS. The most well-known relational DBMS are MySQL, Oracle DBMS, Microsoft SQL Server, IBM DB2 and PostgreSQL. Some object oriented DBMS are O2, Objectivity/DB and Gemstonehe. And the most representative of NoSQL are MongoDB (document), DynamoDB(key value) and GraphBase (graph).<br><img src="/img/Picture2.png" alt="DBS"><br>Ok I can manage the database by buying a DBMS and learning how to use it. But how does a database connect to the web?<br>The architecture is like a chain. A client is the user’s interface and if we are talking about web-based applications then is the browser. When a user types for example www.bbc.com then the browser sends the http request through internet to the web server and then the second send it to the application which transfer it into DBMS which next read the database data and send them back in the same order. Here it is important to be said that the application is what a programmer of an enterprise make whereas the DBMS is what an enterprise buy, and both communicate each other in SQL.</p>
+<p>This was maybe a long introduction about databases but actually this is just the early beginning for getting familiar with how a database works. If you like the idea of dealing with databases or your teacher wants you to design a database you should read this article as a second step in this journey.</p>
+
+
+            <!-- Tags -->
+            
+
+
+<div class="tags">
+    
+</div>
+
+
+
+            <!-- Comments -->
+            <div>
+                
+
+
+            </div>
+        </div><!-- end content -->
+    </section>
+</section><!-- end main -->
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>
