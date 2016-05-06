@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="Application programs depend on database design?
+If you want to become a database analyst one of the tasks with which you have to deal is the data mode">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Annie Sap">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Get a sense of databases Part 2"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Into the Data"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content="undefined"/>
+    
+
+    <!-- Title -->
+    
+    <title>Get a sense of databases Part 2 - Into the Data</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<!-- Menu -->
+<!-- Navigation -->
+<header>
+    <div class="logo">
+        <a href="/">Into the Data</a>
+    </div><!-- end logo -->
+
+    <div id="menu_icon"></div>
+    <nav>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives">Articles</a>
+            </li>
+            
+        </ul>
+    </nav><!-- end navigation menu -->
+
+    <div class="footer clearfix">
+        <ul class="social clearfix">
+            
+                <li>
+                  <a href="https://twitter.com/anniec0d" class="twitter" target="_blank" data-title="Twitter">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+            
+            
+              <li>
+                <a href="https://github.com/annishared" class="github" target="_blank" data-title="Github">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+            
+            
+            
+            
+            
+        </ul><!-- end social -->
+
+        <div class="rights">
+            <p>Copyright © 2016 Annie Sap.</p>
+        </div><!-- end rights -->
+    </div ><!-- end footer -->
+</header><!-- end header -->
+
+
+<!-- Main Content -->
+<section class="main clearfix">
+
+    <section class="top" style="background: url('https://images.unsplash.com/photo-1449431312639-a3fdaaa11aa8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5194f76dce1fa0178cdaba38cd114b09');">
+        <div class="wrapper content_header clearfix">
+            
+
+<div class="work_nav">
+
+    <ul class="btn clearfix">
+        
+        <li><a href="/2016/05/04/strategy/" class="previous" data-title="Thinking beyond business strategy"></a></li>
+        
+        <li><a href="/" class="grid" data-title="Articles"></a></li>
+        
+        <li><a class="next disabled"></a></li>
+        
+    </ul>
+
+</div><!-- end work_nav -->
+
+            <h1 class="title">Get a sense of databases Part 2</h1>
+        </div>
+    </section><!-- end top -->
+
+    <section class="wrapper">
+        <div class="content">
+
+            <!-- Gallery -->
+            
+
+            <!-- Content -->
+            <p>Application programs depend on database design?</p>
+<p>If you want to become a database analyst one of the tasks with which you have to deal is the data modeling. Namely how to organize the data and their interplay. Determining what data you need to store is the very first step and depends on the application requirements. Namely you should initially understand the business domain. Actually the database design is preceded of the application code as a good database design delivers the support and accommodation of the application program and not the reverse.<br>Imagine the application to be the creation of an e-shop for an art gallery. You should define all the transactions of all the stakeholders that will be occurred when they communicate with the app and what effects this would have in the database. For instance you have the customer who wants to buy the Royal Red and Blue painting. He should be able to see the price of it and in database words this means that the data of the specific artwork should be viewed to the interface of the customer. How this data will graphically appear or what button the user presses to see the painting are the code of the application and goes after the database creation. We will analyze this example later in depth.</p>
+<p>What is data modeling?</p>
+<p>The process of modeling is a common practice when you are designing either a new project or in our case a database. There are three kinds of modeling,  functional, behavioral and structural, and all aim to provide a better communication between businesses and IT professionals such as developers, project managers or database specialists to communicate.  We are interested in the structural one and specifically the data model because it offers not only a visual structure of the database but also how the database is used. Thus is accomplished a better understanding between the team which leads to a more sufficient environment for the application. It is important to know that a data model contains high-level data and hides low-level details.<br>Except for that, data modeling is useful in case of the database’s maintenance because when the businesses’ requirements are changing the structure of the database should change too. Imagine that you want to add in your gallery ‘still- life’ artworks because your competitor did so and he is now stealing your customers. So in the e-shop you want to add the category ‘still-life’ on artworks which will interact with all the other components of the app. In order to not to be lost in the chaos of the code you just direct yourself by seeing the data model and deciding where and what the changes should be. Having the ease to scale the database up is a significant factor especially when you are addressing big projects and applications.</p>
+<p>Two concepts that create the db</p>
+<p>What are set of entities?</p>
+<p>If you are familiar with Object Oriented Programming entities are like objects. If you are not, think an entity like a noun. Noun is used for four things as we were taught in school, for people, places, things and events. The same use has an entity with the difference that is always in plural. To illustrate my point, let’s see the example we used before with the gallery. The ‘Lazeridis Gallery’ is conspicuously a place but it is not an entity since it is unique in the world; only if we had many ‘Lazeridis Galleries’ at different locations, one in New York, one in London and one in Amsterdam than it would be an entity. Subsequently whenever we say the entity we mean the set of entities. Now think which are the entities of our example?<br>The customer, the artwork and the artist right?<br><img src="http://www.relationaldbdesign.com/relational-database-design/module5/images/ent_att.gif" alt="entities"></p>
+<h6 id="Image-http-www-relationaldbdesign-com"><a href="#Image-http-www-relationaldbdesign-com" class="headerlink" title="Image: http://www.relationaldbdesign.com/"></a>Image: <em><a href="http://www.relationaldbdesign.com/" target="_blank" rel="external">http://www.relationaldbdesign.com/</a></em></h6><p>Now what are set of relationships?</p>
+<p>Think a relationship as a verb, as the interplay between two entities. People eat cheese.</p>
+<p>Entities: Person, Cheese<br>Relationship between them:  eat!!</p>
+<p>Let’s go back to art now. The artist create (relationship) an artwork. The customer buys (relationship) the artwork. It is intriguing, isn’t it?<br>Ok I am kidding, when you are designing a database you are constantly asking yourself what are the entities and what the relationships. Apparently, they aren’t these questions so easily always answered but they are really important for database design since they are the reason for the birth of the latter. Here it is important to distinguish these two concepts. Entities are strong because they can be held without the existence of relationships, although this would be static and unreal. Since in real world everything is connected with something else, even if their connection is difficult to be found. On the other hand, relationships can not exist without entities, and actually here is located all the magic of relational databases, in relationships. Last I should clarify why we are saying a set of relationships. People could be Johnny Depp, Angelina Jolie and Roo Panes. These are the data in the records/fields of the table People as we will see later. Each one has its own relationship with cheese. Johnny eats 2 pieces of smoked cheese, Angelina is on diet and she eats a half gram of light cheese and Roo eats one kilo of gouda.</p>
+<p>From the two basic concepts entails the concept of the attribute. But what are attributes?  </p>
+<p>Here it is good to be said, that light, smoked and gouda cheese is the name of cheese, so name is an attribute of entity cheese. Attributes are characteristics of entities and relationships. Also Angelina, Johnny and Roo are the attribute name of People entity. Another attribute could be maybe age,  date of birth and the like. And now the interesting part is that the amount of cheese eaten is an attribute of the relationship eat. In people it is obvious that it doesn’t fit this attribute, we do not describe people with an amount of cheese. And it also doesn’t fit in entity cheese since without the relationship eat there is no use to account an amount of cheese. In cheese would be good to measured the calories each cheese has as an attribute; but not the amount the person eats because it is something that happens between the person and cheese. Thus what attributes and where the attributes are located is something that also demands thought. Always remember that we are talking about a set of entities/relationships. Namely attributes should meet the needs of all entities or relationships. This will help you to define the attributes correctly and effortlessly. For instance an attribute like performance in the movie ‘The pirates of Caribbean’ can’t be an attribute in the entity people since only Johnny is joined in this spectacular film. In little words, attributes are the same for each entity of the set of entities and attributes’ values are different between entities.</p>
+
+
+            <!-- Tags -->
+            
+
+
+<div class="tags">
+    
+</div>
+
+
+
+            <!-- Comments -->
+            <div>
+                
+
+
+            </div>
+        </div><!-- end content -->
+    </section>
+</section><!-- end main -->
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>
